@@ -5,8 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
-        "fp"
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,10 +15,20 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "fp"
     ],
     "rules": {
         "react/jsx-filename-extension": "off",
+        "react/jsx-sort-props": [
+            2,
+            {
+                "callbacksLast": true,
+                "shorthandFirst": true,
+                "ignoreCase": true,
+                "reservedFirst": true
+            }
+        ],
         "react/react-in-jsx-scope": "off",
         "no-console": [
             2,
@@ -36,5 +45,31 @@
         "fp/no-mutating-assign": "warn",
         "fp/no-delete": "warn",
         "fp/no-this": "warn",
+        "complexity": [
+            "warn",
+            10
+        ],
+        "max-params": [
+            "warn",
+            3
+        ],
+        "max-nested-callbacks": [
+            "warn",
+            2
+        ],
+        "max-depth": [
+            "warn",
+            3
+        ],
+        "max-lines": [
+            "warn",
+            250
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 110
+            }
+        ]
     }
 }
