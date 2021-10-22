@@ -1,6 +1,6 @@
 # ESLint Workshop
 This is a two-part workshop.
-- Part one consist on the setup of the ESLint tool in a ReactJS project
+- Part one consist on the setup of the ESLint tool in a ReactJS project: [View on YouTube](https://www.youtube.com/watch?v=eYpJLbU1GUI)
 - In part two we configure husky and the environemnt variables.
 
 ## Part ONE
